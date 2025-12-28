@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Testimonials grid section</title>
+
+    <!-- google font - Barlow Semi Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    />
+
+    <style>
+      /* root color */
+      :root {
+        --purple-1: hsl(260, 100%, 95%);
+        --purple-2: hsl(264, 82%, 80%);
+        --purple-3: hsl(263, 55%, 52%);
+        --white: hsl(0, 0%, 100%);
+        --gray-1: hsl(214, 17%, 92%);
+        --gray-2: hsl(0, 0%, 81%);
+        --gray-3: hsl(224, 10%, 45%);
+        --gray-4: hsl(217, 19%, 35%);
+        --dark-blue: hsl(219, 29%, 14%);
+        --black: hsl(0, 0%, 7%);
+      }
+
+      /* custom color */
+      .bege-purple {
+        background-color: var(--purple-3);
+      }
+      .bege-dark-blue {
+        background-color: var(--dark-blue);
+      }
+      .bege-gray-4 {
+        background-color: var(--gray-4);
+      }
+      .bege-white {
+        background-color: var(--white);
+      }
+      .teks-white {
+        color: var(--white);
+      }
+      .my-border-purple {
+        border-color: var(--purple-2);
+      }
+      .teks-dark-blue {
+        color: var(--dark-blue);
+      }
+      .teks-gray {
+        color: var(--gray-1);
+      }
+
+      body {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        overflow-x: hidden;
+        background-color: var(--gray-1);
+      }
+    </style>
+
+    <!-- tailwind css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- main start -->
+    <main
+      class="mx-auto grid w-full max-w-lg grid-cols-1 justify-center gap-8 px-8 py-16 lg:max-w-[1440px] lg:grid-cols-4"
+    >
+      <!-- article 1 start -->
+      <article
+        class="bege-purple teks-white relative space-y-4 rounded-xl p-8 shadow-xl lg:col-span-2"
+      >
+        <img
+          src="images/bg-pattern-quotation.svg"
+          alt="Quotation"
+          class="absolute right-20 top-0 hidden lg:block z-0"
+        />
+
+        <div class="relative z-10">
+        <!-- user info start -->
+        <div class="flex items-center gap-4">
+          <img
+            src="images/image-daniel.jpg"
+            alt="Daniel Clifford"
+            width="32"
+            height="32"
+            class="my-border-purple rounded-full border-2"
+          />
+          <div>
+            <p class="text-sm">Daniel Clifford</p>
+            <p class="teks-gray text-xs">Verified Graduate</p>
+          </div>
+        </div>
+        <!-- user info end -->
+
+        <h2 class="text-xl font-semibold">
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny's worth.
+        </h2>
+
+        <p class="teks-gray text-sm font-normal">
+          "I was an EMT for many years before I joined the bootcamp. I've been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro shortly
+          thereafter. The next 12 weeks was the best - and most grueling - time
+          of my life. Since completing the course, I've successfully switched
+          careers, working as a Software Engineer at a VR startup."
+        </p>
+        </div>
+      </article>
+      <!-- article 1 end-->
+
+      <!-- article 2 start -->
+      <article
+        class="bege-gray-4 teks-white space-y-4 rounded-xl p-8 shadow-xl"
+      >
+        <!-- user info start -->
+        <div class="flex items-center gap-4">
+          <img
+            src="images/image-jonathan.jpg"
+            alt="Jonathan Walters"
+            width="32"
+            height="32"
+            class="rounded-full"
+          />
+          <div>
+            <p class="text-sm">Jonathan Walters</p>
+            <p class="teks-gray text-xs">Verified Graduate</p>
+          </div>
+        </div>
+        <!-- user info end -->
+
+        <h2 class="text-xl font-semibold">
+          The team was very supportive and kept me motivated
+        </h2>
+
+        <p class="teks-gray text-sm font-normal">
+          "I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I've made in myself."
+        </p>
+      </article>
+      <!-- article 2 end -->
+
+      <!-- article 3 start -->
+      <article
+        class="bege-white teks-dark-blue space-y-4 rounded-xl p-8 shadow-xl"
+      >
+        <!-- user info start -->
+        <div class="flex items-center gap-4">
+          <img
+            src="images/image-jeanette.jpg"
+            alt="Jeanette Harmon"
+            width="32"
+            height="32"
+            class="rounded-full"
+          />
+          <div>
+            <p class="text-sm">Jeanette Harmon</p>
+            <p class="text-xs">Verified Graduate</p>
+          </div>
+        </div>
+        <!-- user info end -->
+
+        <h2 class="text-xl font-semibold">
+          An overall wonderful and rewarding experience
+        </h2>
+
+        <p class="text-sm font-normal">
+          "Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love."
+        </p>
+      </article>
+      <!-- article 3 end -->
+
+      <!-- article 4 start -->
+      <article
+        class="bege-dark-blue teks-white space-y-4 rounded-xl p-8 shadow-xl lg:col-span-2"
+      >
+        <!-- user info start -->
+        <div class="flex items-center gap-4">
+          <img
+            src="images/image-patrick.jpg"
+            alt="Patrick Abrams"
+            width="32"
+            height="32"
+            class="my-border-purple rounded-full border-2"
+          />
+          <div>
+            <p class="text-sm">Patrick Abrams</p>
+            <p class="teks-gray text-xs">Verified Graduate</p>
+          </div>
+        </div>
+        <!-- user info end -->
+
+        <h2 class="text-xl font-semibold">
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </h2>
+
+        <p class="teks-gray text-sm font-normal">
+          "The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people."
+        </p>
+      </article>
+      <!-- article 4 end -->
+
+      <!-- article 5 start -->
+      <article
+        class="bege-white teks-dark-blue space-y-4 rounded-xl p-8 shadow-xl lg:col-start-4 lg:row-span-2 lg:row-start-1"
+      >
+        <!-- user info start -->
+        <div class="flex items-center gap-4">
+          <img
+            src="images/image-kira.jpg"
+            alt="Kira Whittle"
+            width="32"
+            height="32"
+            class="rounded-full"
+          />
+          <div>
+            <p class="text-sm">Kira Whittle</p>
+            <p class="text-xs">Verified Graduate</p>
+          </div>
+        </div>
+        <!-- user info end -->
+
+        <h2 class="text-xl font-semibold">
+          Such a life-changing experience. Highly recommended!
+        </h2>
+
+        <p class="text-sm font-normal">
+          "Before joining the bootcamp, I've never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I've
+          often referred to it during interviews as an example of my development
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend!."
+        </p>
+      </article>
+      <!-- article 5 end -->
+    </main>
+    <!-- main end -->
+  </body>
+</html>
